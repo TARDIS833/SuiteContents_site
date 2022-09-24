@@ -1,0 +1,5 @@
+export const base = '#358af1'
+export const text = '#434449'
+export const yellow = '#ffc107'
+export const green = '#4caf50'
+export const danger = '#ef5350'
