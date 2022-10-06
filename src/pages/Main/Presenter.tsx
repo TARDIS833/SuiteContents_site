@@ -4,6 +4,8 @@ import { ReactElement } from 'react'
 import Footer from 'src/components/common/Footer'
 
 import Nav from 'src/components/common/Navigation'
+import AboutSection from 'src/components/layout/Main/mainAboutSection'
+import ReviewSection from 'src/components/layout/Main/mainReviewSection'
 import { MainPreProps } from './types'
 
 const MainView = styled.div``
@@ -42,6 +44,8 @@ const MainPresenter = ({
           <BigCI />
           <MainTitle>모두가 즐거운 세상, 스위트 게임즈</MainTitle>
         </ViewWrapper>
+        <AboutSection />
+        <ReviewSection />
       </MainView>
       <Footer />
     </>

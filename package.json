@@ -18,6 +18,8 @@
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.5",
     "@mui/styled-engine-sc": "^5.10.3",
+    "@types/styled-components": "^5.1.26",
+    "@types/swiper": "^6.0.0",
     "axios": "0.26.1",
     "emotion-reset": "3.0.1",
     "lodash": "4.17.21",
@@ -26,6 +28,7 @@
     "react-cookie": "4.1.1",
     "react-dom": "18.0.0",
     "styled-components": "^5.3.5",
+    "swiper": "^8.4.2",
     "zustand": "4.0.0-rc.0"
   },
   "devDependencies": {
