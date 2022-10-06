@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 // import { Container } from '@mui/system'
-import { ReactElement } from 'react'
+import { ReactElement, useEffect, useState } from 'react'
 import Footer from 'src/components/common/Footer'
 
 import Nav from 'src/components/common/Navigation'
