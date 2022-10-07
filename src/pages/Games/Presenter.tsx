@@ -78,6 +78,7 @@ const GamesSlideWrp = styled.div`
   gap: 10px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 `
 
 const Slideitem = styled.div`

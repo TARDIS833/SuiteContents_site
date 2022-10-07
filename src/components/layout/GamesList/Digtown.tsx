@@ -94,7 +94,7 @@ const ContentRight = styled.div`
 const VideoSectionWrp = styled.div`
   width: 1200px;
   text-align: center;
-  margin: 60px auto;
+  margin: 60px auto 67px;
 `
 const BtnWrp = styled.div`
   width: 926px;
