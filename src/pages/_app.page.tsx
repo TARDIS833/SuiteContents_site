@@ -1,10 +1,10 @@
-import { CacheProvider, EmotionCache } from '@emotion/react'
+import { EmotionCache } from '@emotion/react'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { AppProps } from 'next/app'
 import { theme } from 'src/theme/theme'
 
-import GlobalStyles from 'styles/globalStyle'
 import createEmotionCache from 'src/utils/create-emotion-cache'
+import GlobalStyles from 'styles/globalStyle'
 
 interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache
