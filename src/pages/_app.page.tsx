@@ -20,13 +20,13 @@ function MyApp(props: MyAppProps) {
   const getLayout = Component.getLayout ?? ((page: any) => page)
 
   return (
-    <CacheProvider value={emotionCache}>
+    <>
       <CssBaseline />
       <GlobalStyles />
       <ThemeProvider theme={theme}>
         {getLayout(<Component {...pageProps} />)}
       </ThemeProvider>
-    </CacheProvider>
+    </>
   )
 }
 
