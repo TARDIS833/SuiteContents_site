@@ -45,7 +45,7 @@ const footerMenuList = [
 const Container = styled.div`
   width: 1200px;
   margin: 100px auto;
-  padding: 34px 61px;
+  padding: 34px 0;
 `
 
 const FooterTop = styled.div`
@@ -87,10 +87,44 @@ const Divider = styled.hr`
   border: 1px solid #21212106;
 `
 
-const FooterBottom = styled.div``
-const LogoImg = styled.image``
-const InfoWrapper = styled.div``
-const SnsWrapper = styled.div``
+const FooterBottom = styled.div`
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  /* gap: 70px; */
+  justify-content: space-around;
+  align-items: flex-start;
+`
+const LogoImg = styled.image`
+  width: 253px;
+  height: 26px;
+  background: url('/assets/LogoDefault.png') no-repeat 0 0 / cover;
+  margin-right: 40px;
+`
+const InfoWrp = styled.div``
+const InfoTitle = styled.h3`
+  list-style: none;
+  font-size: 16px;
+  font-weight: 700;
+`
+const InfoContents = styled.ul`
+  list-style: none;
+`
+const InfoText = styled.li`
+  margin-top: 13px;
+  line-height: 19px;
+  color: #21212195;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+`
+
+const ContactWrp = styled.div``
+const Copy = styled.p`
+  text-align: center;
+  font-size: 14px;
+  color: #21212195;
+`
 
 const FooterPresenter = () => {
   return (
@@ -132,9 +166,25 @@ const FooterPresenter = () => {
       <Divider />
       <FooterBottom>
         <LogoImg />
-        <InfoWrapper></InfoWrapper>
-        <SnsWrapper></SnsWrapper>
+        <InfoWrp>
+          <InfoTitle>Suite Contents co.</InfoTitle>
+          <InfoContents>
+            <InfoText>주식회사 스위트게임즈</InfoText>
+            <InfoText>사업자등록번호 310-86-03121</InfoText>
+            <InfoText>대표이사 손영익</InfoText>
+          </InfoContents>
+        </InfoWrp>
+        <ContactWrp>
+          <InfoTitle>CONTACT US</InfoTitle>
+          <InfoContents>
+            <InfoText>주식회사 스위트게임즈</InfoText>
+            <InfoText>문의 | contact@suitegames.co.kr</InfoText>
+            <InfoText>서울특별시 마포구 서교동 352-17, 255호</InfoText>
+          </InfoContents>
+        </ContactWrp>
       </FooterBottom>
+      <Divider />
+      <Copy>Copyright &#169; 2022 Suitegames Corp. All right reserved. </Copy>
     </Container>
   )
 }
