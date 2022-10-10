@@ -46,6 +46,10 @@ const Container = styled.div`
   width: 1200px;
   margin: 100px auto;
   padding: 34px 0;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+  }
 `
 
 const FooterTop = styled.div`
@@ -53,6 +57,10 @@ const FooterTop = styled.div`
   flex-direction: row;
   gap: 138px;
   justify-content: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    display: none;
+  }
 `
 const FooterMenu = styled.div``
 const MenuUl = styled.ul`
@@ -85,6 +93,10 @@ const SubDesc = styled.div`
 const Divider = styled.hr`
   margin: 47px auto;
   border: 1px solid #21212106;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    display: none;
+  }
 `
 
 const FooterBottom = styled.div`
@@ -94,21 +106,52 @@ const FooterBottom = styled.div`
   /* gap: 70px; */
   justify-content: space-around;
   align-items: flex-start;
+
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 16px;
+    text-align: center;
+    gap: 24px;
+  }
 `
 const LogoImg = styled.image`
   width: 253px;
   height: 26px;
   background: url('/assets/LogoDefault.png') no-repeat 0 0 / cover;
   margin-right: 40px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    margin: 0 auto 30px;
+  }
 `
-const InfoWrp = styled.div``
+const InfoWrp = styled.div`
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+`
 const InfoTitle = styled.h3`
   list-style: none;
   font-size: 16px;
   font-weight: 700;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+  }
 `
 const InfoContents = styled.ul`
   list-style: none;
+
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `
 const InfoText = styled.li`
   margin-top: 13px;
@@ -119,11 +162,23 @@ const InfoText = styled.li`
   line-height: 110%;
 `
 
-const ContactWrp = styled.div``
+const ContactWrp = styled.div`
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+`
 const Copy = styled.p`
   text-align: center;
   font-size: 14px;
   color: #21212195;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin-top: 24px;
+    font-size: 12px;
+  }
 `
 
 const FooterPresenter = () => {

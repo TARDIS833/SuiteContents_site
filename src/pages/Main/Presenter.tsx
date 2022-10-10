@@ -39,14 +39,14 @@ const MainPresenter = ({
   return (
     <>
       <Nav />
-      <MainView>
+      {/* <MainView>
         <ViewWrapper>
           <BigCI />
           <MainTitle>모두가 즐거운 세상, 스위트 게임즈</MainTitle>
         </ViewWrapper>
         <AboutSection />
         <ReviewSection />
-      </MainView>
+      </MainView>*/}
       <Footer />
     </>
   )
