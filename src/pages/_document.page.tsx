@@ -21,7 +21,7 @@ export default class CustomDocument extends Document {
 CustomDocument.getInitialProps = async (ctx) => {
   const originalRenderPage = ctx.renderPage
   const cache = createEmotionCache()
-  const { extractCriticalToChunks } = createEmotionServer(cache)
+  // const { extractCriticalToChunks } = createEmotionServer(cache)
 
   ctx.renderPage = () =>
     originalRenderPage({
@@ -32,18 +32,18 @@ CustomDocument.getInitialProps = async (ctx) => {
     })
 
   const initialProps = await Document.getInitialProps(ctx)
-  const emotionStyles = extractCriticalToChunks(initialProps.html)
-  const emotionStyleTags = emotionStyles.styles.map((style) => (
-    <style
-      data-emotion={`${style.key} ${style.ids.join(' ')}`}
-      key={style.key}
-      // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{ __html: style.css }}
-    />
-  ))
+  // const emotionStyles = extractCriticalToChunks(initialProps.html)
+  // const emotionStyleTags = emotionStyles.styles.map((style) => (
+  //   <style
+  //     data-emotion={`${style.key} ${style.ids.join(' ')}`}
+  //     key={style.key}
+  //     // eslint-disable-next-line react/no-danger
+  //     dangerouslySetInnerHTML={{ __html: style.css }}
+  //   />
+  // ))
 
   return {
     ...initialProps,
-    emotionStyleTags,
+    // emotionStyleTags,
   }
 }
