@@ -39,8 +39,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: 0px) and (max-width: 359px) {
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
     width: 100%;
+    box-shadow: none;
   }
 `
 const NavContainer = styled.div`

@@ -8,7 +8,13 @@ import AboutSection from 'src/components/layout/Main/mainAboutSection'
 import ReviewSection from 'src/components/layout/Main/mainReviewSection'
 import { MainPreProps } from './types'
 
-const MainView = styled.div``
+const MainView = styled.div`
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+`
 
 const ViewWrapper = styled.div`
   height: 735px;
@@ -16,12 +22,24 @@ const ViewWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+  }
 `
 const BigCI = styled.div`
   width: 612px;
   height: 63px;
   background: url('/assets/mainWideLG.png') no-repeat 0 0 / cover;
   margin-bottom: 35px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 316px;
+    height: 32px;
+    /* margin: 0 auto; */
+  }
 `
 const MainTitle = styled.h1`
   /* font-family: 'Inter'; */
@@ -39,14 +57,14 @@ const MainPresenter = ({
   return (
     <>
       <Nav />
-      {/* <MainView>
+      <MainView>
         <ViewWrapper>
           <BigCI />
           <MainTitle>모두가 즐거운 세상, 스위트 게임즈</MainTitle>
         </ViewWrapper>
-        <AboutSection />
-        <ReviewSection />
-      </MainView>*/}
+        {/* <AboutSection />
+        <ReviewSection /> */}
+      </MainView>
       <Footer />
     </>
   )
