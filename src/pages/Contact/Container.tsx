@@ -1,3 +1,4 @@
+import Footer from 'src/components/common/Footer'
 import Nav from 'src/components/common/Navigation'
 import ContactPresenter from './Presenter'
 
@@ -6,6 +7,7 @@ const ContactContainer = () => {
     <>
       <Nav />
       <ContactPresenter />
+      <Footer />
     </>
   )
 }

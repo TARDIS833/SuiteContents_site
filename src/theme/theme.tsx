@@ -14,6 +14,7 @@ export const theme = createTheme({
       main: '#32922B',
       contrastText: '#ffffff',
     },
+    divider: 'rgba(0, 0, 0, .125)',
   },
 })
 
