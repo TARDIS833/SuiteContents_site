@@ -5,11 +5,17 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination } from 'swiper'
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper'
 
 const Container = styled.section`
   width: 1200px;
   margin: 0 auto;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+  }
 `
 const ReviewWrapper = styled.div`
   margin: 80px auto 160px;
@@ -31,6 +37,18 @@ const SectionDesc = styled.p`
 `
 const SlideWrapper = styled.div`
   margin: 70px 0;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    display: none;
+  }
+`
+const SlideWrapperMobile = styled.div`
+  display: none;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    display: block;
+    padding: 24px 0;
+  }
 `
 const StyledSwiper = styled(Swiper)``
 const SlideBox = styled(SwiperSlide)``
@@ -60,6 +78,7 @@ const ReviewSection = () => {
             navigation
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
+            loop={true}
           >
             <SlideBox>
               <StarWrap>
@@ -127,6 +146,88 @@ const ReviewSection = () => {
             </SlideBox>
           </StyledSwiper>
         </SlideWrapper>
+
+        {/* Mobile ver. */}
+        <SlideWrapperMobile>
+          <StyledSwiper
+            modules={[Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            // navigation
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            loop={true}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+          >
+            <SlideBox>
+              <StarWrap>
+                <Image src={'/assets/stars.png'} width={152} height={24} />
+              </StarWrap>
+              <ReviewComments>
+                “이거 너무 재미있어서 학교 가져가서 친구들하고 하고 싶어요.”
+              </ReviewComments>
+              <ReviewerWrp>
+                <ReviewerProfile>
+                  <Image src={'/assets/Profile.png'} width={40} height={40} />
+                </ReviewerProfile>
+                <Reviewer>
+                  디그타운 베타테스터 -<span>LJH &#40;12세&#41;</span>
+                </Reviewer>
+              </ReviewerWrp>
+            </SlideBox>
+            <SlideBox>
+              <StarWrap>
+                <Image src={'/assets/stars.png'} width={152} height={24} />
+              </StarWrap>
+              <ReviewComments>
+                “이거 너무 재미있어서 학교 가져가서 친구들하고 하고 싶어요.”
+              </ReviewComments>
+              <ReviewerWrp>
+                <ReviewerProfile>
+                  <Image src={'/assets/Profile.png'} width={40} height={40} />
+                </ReviewerProfile>
+                <Reviewer>
+                  디그타운 베타테스터 -<span>LJH &#40;12세&#41;</span>
+                </Reviewer>
+              </ReviewerWrp>
+            </SlideBox>
+            <SlideBox>
+              <StarWrap>
+                <Image src={'/assets/stars.png'} width={152} height={24} />
+              </StarWrap>
+              <ReviewComments>
+                “이거 너무 재미있어서 학교 가져가서 친구들하고 하고 싶어요.”
+              </ReviewComments>
+              <ReviewerWrp>
+                <ReviewerProfile>
+                  <Image src={'/assets/Profile.png'} width={40} height={40} />
+                </ReviewerProfile>
+                <Reviewer>
+                  디그타운 베타테스터 -<span>LJH &#40;12세&#41;</span>
+                </Reviewer>
+              </ReviewerWrp>
+            </SlideBox>
+            <SlideBox>
+              <StarWrap>
+                <Image src={'/assets/stars.png'} width={152} height={24} />
+              </StarWrap>
+              <ReviewComments>
+                “이거 너무 재미있어서 학교 가져가서 친구들하고 하고 싶어요.”
+              </ReviewComments>
+              <ReviewerWrp>
+                <ReviewerProfile>
+                  <Image src={'/assets/Profile.png'} width={40} height={40} />
+                </ReviewerProfile>
+                <Reviewer>
+                  디그타운 베타테스터 -<span>LJH &#40;12세&#41;</span>
+                </Reviewer>
+              </ReviewerWrp>
+            </SlideBox>
+          </StyledSwiper>
+        </SlideWrapperMobile>
       </ReviewWrapper>
     </Container>
   )
