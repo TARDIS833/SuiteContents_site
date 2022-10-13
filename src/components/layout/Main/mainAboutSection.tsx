@@ -4,12 +4,24 @@ import Image from 'next/image'
 const Container = styled.div`
   width: 1200px;
   margin: 0 auto;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+  }
 `
 const IntroWrapper = styled.div`
   margin: 80px auto 160px;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
 `
 
 const IntroSecWrp = styled.div`
@@ -17,6 +29,12 @@ const IntroSecWrp = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
 `
 const IntroTitle = styled.h1`
   font-family: 'Inter';
@@ -26,6 +44,10 @@ const IntroTitle = styled.h1`
   letter-spacing: 1.2px;
   color: #212121;
   margin-bottom: 16px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 2.3em;
+  }
 `
 const IntroDesc = styled.h4`
   width: 450px;
@@ -37,6 +59,12 @@ const IntroDesc = styled.h4`
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #757575;
+
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    font-size: 1em;
+  }
 `
 const ImgWrp = styled.div`
   width: 590px;
@@ -48,6 +76,11 @@ const ImgWrp = styled.div`
   background: #eff3fd;
   border-radius: 5px;
   overflow: hidden;
+
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    display: none;
+  }
 `
 const SectionTitle = styled.h1`
   font-family: 'Inter';
@@ -56,23 +89,42 @@ const SectionTitle = styled.h1`
   line-height: 58px;
   color: #212121;
   margin-bottom: 16px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 2.1em;
+  }
 `
 const SectionDesc = styled.p`
   font-family: 'Inter';
   font-size: 20px;
   line-height: 24px;
   color: #757575;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 1em;
+  }
 `
 const VideoSection = styled.div`
   width: 1200px;
   margin: 80px auto 160px;
   text-align: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `
 
 const VideoWrapper = styled.div`
   display: flex;
   margin: 70px 0 10px;
   gap: 38px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 48px auto;
+    display: block;
+  }
 `
 const Video = styled.div`
   width: 652px;
@@ -81,6 +133,13 @@ const Video = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 `
 
 const QuotationWrapper = styled.div`
@@ -88,8 +147,13 @@ const QuotationWrapper = styled.div`
   text-align: left;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 `
 const Quotation = styled.h3`
   font-family: 'Inter';
