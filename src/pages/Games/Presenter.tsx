@@ -7,6 +7,10 @@ import styled from 'styled-components'
 
 const Container = styled.section`
   margin: 0 auto;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+  }
 `
 const MainWrapper = styled.div`
   height: 735px;
@@ -20,6 +24,13 @@ const MainWrapper = styled.div`
 const MainContentsWrp = styled.div`
   text-align: center;
   width: 1200px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    padding: 16px 0;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
 `
 const MainTitle = styled.div`
   font-family: 'Inter';
@@ -28,6 +39,11 @@ const MainTitle = styled.div`
   line-height: 77px;
   color: #212121;
   margin-bottom: 16px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 52px;
+    line-height: 110%;
+  }
 `
 const MainDesc = styled.div`
   font-family: 'Inter';
@@ -48,6 +64,10 @@ const IntroduceGames = styled.div`
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+  }
 `
 const CapTitle = styled.div`
   font-family: 'Inter';
@@ -66,6 +86,12 @@ const IntroTitle = styled.div`
   line-height: 58px;
   color: #212121;
   margin-bottom: 32px;
+
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
 `
 const IntroDesc = styled(CapTitle)`
   white-space: pre-wrap;
@@ -79,12 +105,23 @@ const GamesSlideWrp = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    display: block;
+    padding: 16px;
+  }
 `
 
 const Slideitem = styled.div`
   width: 397px;
   height: 460px;
   padding: 20px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    padding: 16px 0;
+  }
 `
 const ImageBox = styled.div`
   width: 356px;
@@ -92,6 +129,10 @@ const ImageBox = styled.div`
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 26px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+  }
 `
 const ItemTitle = styled.div`
   font-family: 'Inter';
@@ -101,6 +142,11 @@ const ItemTitle = styled.div`
   line-height: 29px;
   color: #212121;
   margin-bottom: 16px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 28px;
+    font-weight: 700;
+  }
 `
 const ItemDesc = styled.div`
   white-space: pre-wrap;
@@ -207,7 +253,7 @@ const GamesPresenter = () => {
         </GamesSlideWrp>
       </IntroduceGames>
       <DigTown />
-      <Weaken /> {/*copy*/}
+      <Weaken />
       <Zomvice />
     </Container>
   )

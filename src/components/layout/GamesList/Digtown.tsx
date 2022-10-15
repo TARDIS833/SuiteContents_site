@@ -4,17 +4,31 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   margin: 0 auto;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    padding: 16px 0;
+  }
 `
 const GameHeaderImg = styled.div`
   width: 100vw;
   height: 500px;
   background: url('/assets/digtownImg.png') no-repeat 50% 50% / cover;
   margin-bottom: 80px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    display: none;
+  }
 `
 const ContentsSectionWrp = styled.section`
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    padding: 16px 0;
+  }
 `
 const CapTitle = styled.h3`
   font-family: 'Inter';
@@ -25,6 +39,10 @@ const CapTitle = styled.h3`
   color: #757575;
   text-transform: capitalize;
   margin-bottom: 24px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    margin-bottom: 12px;
+  }
 `
 const IntroTitle = styled.h1`
   font-family: 'Inter';
@@ -44,16 +62,33 @@ const ContentsWrp = styled.div`
   gap: 32px;
   justify-content: space-between;
   margin-bottom: 120px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+  }
 `
 
 const ContentLeft = styled.div`
   width: 512px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100vw;
+    margin: 0 auto;
+  }
 `
 const FeatureItem = styled.div`
   text-align: left;
   display: flex;
   gap: 24px;
   margin-bottom: 40px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100vw;
+    display: block;
+    margin: 0 auto 36px;
+  }
 `
 const IconBox = styled.div`
   width: 50px;
@@ -63,8 +98,17 @@ const IconBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    margin: 0 auto 16px;
+  }
 `
-const TextBox = styled.div``
+const TextBox = styled.div`
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    text-align: center;
+  }
+`
 const FeatureTitle = styled.div`
   font-family: 'Inter';
   font-weight: 600;
@@ -73,6 +117,12 @@ const FeatureTitle = styled.div`
   letter-spacing: 0.2px;
   color: #212121;
   margin-bottom: 16px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 80vw;
+    font-size: 20px;
+    margin: 0 auto 8px;
+  }
 `
 const FeatureDesc = styled.div`
   width: 350px;
@@ -82,6 +132,11 @@ const FeatureDesc = styled.div`
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #757575;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 80vw;
+    margin: 0 auto;
+  }
 `
 
 const ContentRight = styled.div`
@@ -89,12 +144,21 @@ const ContentRight = styled.div`
   height: 490px;
   border-radius: 8px;
   overflow: hidden;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    display: none;
+  }
 `
 
 const VideoSectionWrp = styled.div`
   width: 1200px;
   text-align: center;
   margin: 60px auto 67px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100vw;
+    padding: 16px 0;
+  }
 `
 const BtnWrp = styled.div`
   width: 926px;
@@ -105,6 +169,10 @@ const BtnWrp = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 90vw;
+  }
 `
 const ButtonSpan = styled.span`
   font-size: 28px;
