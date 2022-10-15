@@ -43,6 +43,7 @@ const Container = styled.div`
     (min-width: 0px) and (max-width: 359px) {
     width: 100%;
     box-shadow: none;
+    z-index: 999;
   }
 `
 const NavContainer = styled.div`

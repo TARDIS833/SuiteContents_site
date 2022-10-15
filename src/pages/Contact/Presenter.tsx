@@ -12,6 +12,10 @@ import { styled } from '@mui/material/styles'
 const Container = styles.section`
   width: 1200px;
   margin: 0 auto;
+  @media (min-width: 360px) and (max-width: 1032px),
+  (min-width: 0px) and (max-width: 359px) {
+  width: 100%;
+}
 `
 
 const FaqSection = styles.section`
@@ -19,10 +23,22 @@ const FaqSection = styles.section`
   gap: 70px;
   align-items: center;
   justify-content: space-between;
-  margin: 80px 120px
+  margin: 80px 120px;
+  @media (min-width: 360px) and (max-width: 1032px),
+  (min-width: 0px) and (max-width: 359px) {
+    display:block;
+    margin: 0 auto;
+  }
 `
 const SectionTitleWrp = styles.div`
-width:588px;`
+width:588px;
+@media (min-width: 360px) and (max-width: 1032px),
+(min-width: 0px) and (max-width: 359px){
+  width:100vw;
+  text-align:center;
+  margin:24px 0 48px;
+}
+`
 const SectionTitle = styles.h1`
 font-family: 'Inter';
 font-weight: 600;
@@ -35,6 +51,10 @@ color: #212121;
     font-size: 32px;
     color: #b2b2b2;
   }
+  @media (min-width: 360px) and (max-width: 1032px),
+  (min-width: 0px) and (max-width: 359px){
+    text-align:center;
+  }
 `
 const SectionDesc = styles.p`
 font-family: 'Inter';
@@ -45,12 +65,20 @@ line-height: 28px;
 color: #757575;`
 
 const FaqAccorWrp = styles.div`
-width:542px;`
+width:542px;
+@media (min-width: 360px) and (max-width: 1032px),
+(min-width: 0px) and (max-width: 359px){
+  width:100%;
+  z-index:-1;
+}
+
+`
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
   borderBottom: `2px solid ${theme.palette.divider}`,
+  zIndex: '-1',
   // '&:not(:last-child)': {
   //   borderBottom: 0,
   // },
