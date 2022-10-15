@@ -36,6 +36,10 @@ const introData = [
 ]
 const Container = styled.div`
   text-align: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+  }
 `
 const ViewWrapper = styled.div`
   height: 735px;
@@ -44,6 +48,11 @@ const ViewWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   background: #5f0502;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100vw;
+    padding: 16px 0;
+  }
 `
 const AboutTitle = styled.h1`
   font-family: 'Inter';
@@ -52,6 +61,11 @@ const AboutTitle = styled.h1`
   line-height: 80px;
   color: #ffffff;
   margin-bottom: 16px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 52px;
+    line-height: 110%;
+  }
 `
 const AboutDesc = styled.p`
   font-family: 'Inter';
@@ -66,6 +80,10 @@ const AboutDesc = styled.p`
 `
 const SuiteIntro = styled.div`
   margin: 158px auto;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    margin: 80px auto;
+  }
 `
 const CapTitle = styled.h3`
   font-family: 'Inter';
@@ -96,10 +114,21 @@ const IntroBoxies = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 36px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100vw;
+    padding: 16px 0;
+    display: block;
+  }
 `
 const IntroBox = styled.div`
   width: 374px;
   text-align: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100vw;
+    padding: 32px;
+  }
 `
 const ImgWrp = styled.div`
   width: 60px;
@@ -134,11 +163,19 @@ const BoxDesc = styled.div`
 const PartnersWrp = styled.div`
   height: 565px;
   padding: 80px 0;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+  }
 `
 const IntroduceGames = styled.div`
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+  }
 `
 const GamesSlideWrp = styled.div`
   width: 1200px;
@@ -147,11 +184,22 @@ const GamesSlideWrp = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    display: block;
+    padding: 16px;
+  }
 `
 const Slideitem = styled.div`
   width: 397px;
   height: 460px;
   padding: 20px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+    padding: 16px 0;
+  }
 `
 const ImageBox = styled.div`
   width: 356px;
@@ -159,6 +207,10 @@ const ImageBox = styled.div`
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 26px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    width: 100%;
+  }
 `
 const ItemTitle = styled.div`
   font-family: 'Inter';
@@ -168,6 +220,11 @@ const ItemTitle = styled.div`
   line-height: 29px;
   color: #212121;
   margin-bottom: 16px;
+  @media (min-width: 360px) and (max-width: 1032px),
+    (min-width: 0px) and (max-width: 359px) {
+    font-size: 28px;
+    font-weight: 700;
+  }
 `
 const ItemDesc = styled.div`
   white-space: pre-wrap;
