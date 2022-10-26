@@ -64,6 +64,7 @@ const IntroduceGames = styled.div`
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 180px;
   @media (min-width: 360px) and (max-width: 1032px),
     (min-width: 0px) and (max-width: 359px) {
     width: 100%;
@@ -133,6 +134,26 @@ const ImageBox = styled.div`
     (min-width: 0px) and (max-width: 359px) {
     width: 100%;
   }
+  position: relative;
+`
+
+const CommingSoonWrp = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const CStext = styled.h4`
+  font-weight: 600;
+  color: #c5c5c5;
+  font-size: 36px;
+  white-space: pre-wrap;
+  line-height: 120%;
 `
 const ItemTitle = styled.div`
   font-family: 'Inter';
@@ -171,7 +192,7 @@ const GamesPresenter = () => {
           <MainDesc>스위트게임즈 최초로 출시하는 게임</MainDesc>
           <MainDescName>DigTown</MainDescName>
         </MainContentsWrp>
-        <Button
+        {/* <Button
           variant="contained"
           sx={{
             width: '205px',
@@ -185,11 +206,11 @@ const GamesPresenter = () => {
           }}
         >
           Get Started
-        </Button>
+        </Button> */}
       </MainWrapper>
       <IntroduceGames>
         <CapTitle>suite games</CapTitle>
-        <IntroTitle>스위트가 만든 게임들</IntroTitle>
+        <IntroTitle>스위트 게임즈의 게임들</IntroTitle>
         <IntroDesc>
           초등학교 저학년 부터 60세 어르신까지 모두 다 쉽게 적응합니다.{'\n'} 온
           가족이 함께 즐길 수 있는 파티게임!
@@ -217,19 +238,23 @@ const GamesPresenter = () => {
           <Slideitem>
             <ImageBox>
               <Image
-                src={'/assets/gameImg2.png'}
+                src={'/assets/gameImg2.jpeg'}
                 width={356}
                 height={228}
                 layout={'fixed'}
               />
+              <CommingSoonWrp>
+                <CStext>Comming{'\n'}Soon</CStext>
+              </CommingSoonWrp>
             </ImageBox>
-            <ItemTitle>Dig Town</ItemTitle>
+            <ItemTitle>Weaken</ItemTitle>
             <ItemDesc>
-              주사위를 굴려서 진행하는{'\n'} 2 ~ 6인용 레이스형 파티게임
+              몬스터와 계속 진행하는 전투는{'\n'} 영웅을 약하게 만듭니다.
             </ItemDesc>
+            <ItemDesc>하지만, 플레이어가 충분히 강하다면?</ItemDesc>
             <ItemDesc>
-              난이도 1점, 쉬워서 누구나 할 수 있는{'\n'} 가족 모임에 딱 맞는
-              게임
+              당신의 플레이 역량이 모든 것을 좌우하는{'\n'} 로그라이크 플랫포머
+              게임.
             </ItemDesc>
           </Slideitem>
           <Slideitem>
@@ -240,14 +265,20 @@ const GamesPresenter = () => {
                 height={228}
                 layout={'fixed'}
               />
+              <CommingSoonWrp>
+                <CStext>Comming{'\n'}Soon</CStext>
+              </CommingSoonWrp>
             </ImageBox>
-            <ItemTitle>Dig Town</ItemTitle>
+            <ItemTitle>Zomvice</ItemTitle>
             <ItemDesc>
-              주사위를 굴려서 진행하는{'\n'} 2 ~ 6인용 레이스형 파티게임
+              좀비에 대항하는 시민들과{'\n'}
+              좀비들을 만드는 마스터{'\n'}
+              좀비떼의 압박이 고스란이 전해지는{'\n'}
+              전략도 운도 모두 필요한 보드게임
             </ItemDesc>
             <ItemDesc>
-              난이도 1점, 쉬워서 누구나 할 수 있는{'\n'} 가족 모임에 딱 맞는
-              게임
+              2 ~ 9인까지 플레이 가능해{'\n'}
+              대규모 전투가 테이블 위에서 펼쳐집니다.
             </ItemDesc>
           </Slideitem>
         </GamesSlideWrp>
