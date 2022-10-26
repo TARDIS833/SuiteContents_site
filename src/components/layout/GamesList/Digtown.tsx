@@ -229,7 +229,7 @@ const DigTown = () => {
             </FeatureItem>
             <FeatureItem>
               <IconBox>
-                <Image src={'/assets/icon/dig04.png'} width={30} height={30} />
+                <Image src={'/assets/icon/dig04.png'} width={25} height={25} />
               </IconBox>
               <TextBox>
                 <FeatureTitle>전투민족에게 가장 알맞은 게임</FeatureTitle>
