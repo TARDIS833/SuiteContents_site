@@ -68,6 +68,7 @@ const MenuUl = styled.ul`
   font-size: 16px;
   font-weight: 700;
   padding-top: 30px;
+  text-align: center;
 `
 const MenuList = styled.li`
   margin-top: 13px;
@@ -197,7 +198,7 @@ const FooterPresenter = () => {
             </>
           ))}
         </>
-        <SubscribeWrapper>
+        {/* <SubscribeWrapper>
           <MenuUl>뉴스레터 구독</MenuUl>
           <Input
             placeholder="Email address"
@@ -209,13 +210,12 @@ const FooterPresenter = () => {
               margin: '18px 0',
             }}
           />
-          {/* <Button variant="text"> &#62; </Button>s */}
 
           <SubDesc>
             스위트게임즈의 새로운 소식을 한 발 먼저 확인하고 싶다면, 뉴스레터를
             구독해보세요
           </SubDesc>
-        </SubscribeWrapper>
+        </SubscribeWrapper> */}
       </FooterTop>
       {/* ------------------------------------------ */}
       <Divider />

@@ -54,10 +54,27 @@ const StyledSwiper = styled(Swiper)``
 const SlideBox = styled(SwiperSlide)``
 
 const StarWrap = styled.div``
-const ReviewComments = styled.div``
+const ReviewComments = styled.h6`
+  margin: 27px 0;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  white-space: pre-wrap;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #424242;
+`
 const ReviewerWrp = styled.div``
 const ReviewerProfile = styled.div``
-const Reviewer = styled.div``
+const Reviewer = styled.p`
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.2px;
+  color: #757575;
+`
 
 const ReviewSection = () => {
   SwiperCore.use([Navigation, Pagination])
@@ -85,12 +102,13 @@ const ReviewSection = () => {
                 <Image src={'/assets/stars.png'} width={152} height={24} />
               </StarWrap>
               <ReviewComments>
-                “이거 너무 재미있어서 학교 가져가서 친구들하고 하고 싶어요.”
+                “게임 플레이가 너무 재미있어서{'\n'}학교 가져가서 친구들하고
+                하고 싶어요.”
               </ReviewComments>
               <ReviewerWrp>
-                <ReviewerProfile>
+                {/* <ReviewerProfile>
                   <Image src={'/assets/Profile.png'} width={40} height={40} />
-                </ReviewerProfile>
+                </ReviewerProfile> */}
                 <Reviewer>
                   디그타운 베타테스터 -<span>LJH &#40;12세&#41;</span>
                 </Reviewer>
@@ -101,12 +119,13 @@ const ReviewSection = () => {
                 <Image src={'/assets/stars.png'} width={152} height={24} />
               </StarWrap>
               <ReviewComments>
-                “이거 너무 재미있어서 학교 가져가서 친구들하고 하고 싶어요.”
+                "집에 가서도 그 보드게임이 자꾸 생각 나.{'\n'} 오늘 또 너희 집
+                가도 되냐?"
               </ReviewComments>
               <ReviewerWrp>
-                <ReviewerProfile>
+                {/* <ReviewerProfile>
                   <Image src={'/assets/Profile.png'} width={40} height={40} />
-                </ReviewerProfile>
+                </ReviewerProfile> */}
                 <Reviewer>
                   디그타운 베타테스터 -<span>LJH &#40;12세&#41;</span>
                 </Reviewer>
@@ -117,12 +136,13 @@ const ReviewSection = () => {
                 <Image src={'/assets/stars.png'} width={152} height={24} />
               </StarWrap>
               <ReviewComments>
-                “이거 너무 재미있어서 학교 가져가서 친구들하고 하고 싶어요.”
+                “게임 플레이가 너무 재미있어서{'\n'}학교 가져가서 친구들하고
+                하고 싶어요.”
               </ReviewComments>
               <ReviewerWrp>
-                <ReviewerProfile>
+                {/* <ReviewerProfile>
                   <Image src={'/assets/Profile.png'} width={40} height={40} />
-                </ReviewerProfile>
+                </ReviewerProfile> */}
                 <Reviewer>
                   디그타운 베타테스터 -<span>LJH &#40;12세&#41;</span>
                 </Reviewer>
@@ -133,12 +153,13 @@ const ReviewSection = () => {
                 <Image src={'/assets/stars.png'} width={152} height={24} />
               </StarWrap>
               <ReviewComments>
-                “이거 너무 재미있어서 학교 가져가서 친구들하고 하고 싶어요.”
+                "집에 가서도 그 보드게임이 자꾸 생각 나.{'\n'} 오늘 또 너희 집
+                가도 되냐?"
               </ReviewComments>
               <ReviewerWrp>
-                <ReviewerProfile>
+                {/* <ReviewerProfile>
                   <Image src={'/assets/Profile.png'} width={40} height={40} />
-                </ReviewerProfile>
+                </ReviewerProfile> */}
                 <Reviewer>
                   디그타운 베타테스터 -<span>LJH &#40;12세&#41;</span>
                 </Reviewer>
