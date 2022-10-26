@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['http://localhost:3000'],
+    domains: ['http://localhost:3000', 'https://www.suitegames.kr'],
   },
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
 
