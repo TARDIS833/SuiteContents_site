@@ -284,8 +284,8 @@ const GamesPresenter = () => {
         </GamesSlideWrp>
       </IntroduceGames>
       <DigTown />
-      <Weaken />
-      <Zomvice />
+      {/* <Weaken /> */}
+      {/* <Zomvice /> */}
     </Container>
   )
 }

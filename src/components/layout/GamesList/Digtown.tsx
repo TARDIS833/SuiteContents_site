@@ -250,12 +250,12 @@ const DigTown = () => {
           </ContentRight>
         </ContentsWrp>
 
-        <CapTitle>3분 게임 설명</CapTitle>
-        <IntroTitle>디그타운을 보다 쉽게 살펴보세요</IntroTitle>
-        <IntroDesc>
+        {/* <CapTitle>3분 게임 설명</CapTitle>
+        <IntroTitle>디그타운을 보다 쉽게 살펴보세요</IntroTitle> */}
+        {/* <IntroDesc>
           게임 룰을 동영상으로 살펴보면 정말 쉽게 이해할 수 있습니다.
-        </IntroDesc>
-        <VideoSectionWrp>
+        </IntroDesc> */}
+        {/* <VideoSectionWrp>
           <BtnWrp>
             <Button
               variant="contained"
@@ -276,7 +276,7 @@ const DigTown = () => {
             <Image src={'/assets/videoDefault.png'} width={92} height={92} />
           </BtnWrp>
           <VideoWrp></VideoWrp>
-        </VideoSectionWrp>
+        </VideoSectionWrp> */}
       </ContentsSectionWrp>
     </Container>
   )
