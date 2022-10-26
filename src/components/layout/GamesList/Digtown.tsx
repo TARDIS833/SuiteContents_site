@@ -94,7 +94,7 @@ const IconBox = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  background-color: #e7ecfc;
+  background-color: #fce7e7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +193,7 @@ const DigTown = () => {
           <ContentLeft>
             <FeatureItem>
               <IconBox>
-                <Image src={'/assets/icon/cloud.svg'} width={25} height={25} />
+                <Image src={'/assets/icon/dig01.png'} width={30} height={30} />
               </IconBox>
               <TextBox>
                 <FeatureTitle>주사위 운이 모든 것을 결정합니다.</FeatureTitle>
@@ -204,7 +204,7 @@ const DigTown = () => {
             </FeatureItem>
             <FeatureItem>
               <IconBox>
-                <Image src={'/assets/icon/push.svg'} width={25} height={25} />
+                <Image src={'/assets/icon/dig02.png'} width={30} height={30} />
               </IconBox>
               <TextBox>
                 <FeatureTitle>끝날 때 까지 끝난 것이 아니다.</FeatureTitle>
@@ -217,7 +217,7 @@ const DigTown = () => {
             </FeatureItem>
             <FeatureItem>
               <IconBox>
-                <Image src={'/assets/icon/text.svg'} width={25} height={25} />
+                <Image src={'/assets/icon/dig03.png'} width={30} height={30} />
               </IconBox>
               <TextBox>
                 <FeatureTitle>할아버지와 손주가 함께</FeatureTitle>
@@ -229,7 +229,7 @@ const DigTown = () => {
             </FeatureItem>
             <FeatureItem>
               <IconBox>
-                <Image src={'/assets/icon/twitch.svg'} width={25} height={25} />
+                <Image src={'/assets/icon/dig04.png'} width={30} height={30} />
               </IconBox>
               <TextBox>
                 <FeatureTitle>전투민족에게 가장 알맞은 게임</FeatureTitle>
