@@ -5,6 +5,7 @@ const nextConfig = {
     domains: [
       'http://localhost:3000',
       'https://www.suitegames.kr',
+      'https://suitegames.kr',
       'https://www.suitegames.co.kr/',
     ],
   },
