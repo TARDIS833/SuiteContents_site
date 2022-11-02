@@ -201,7 +201,7 @@ const AboutSection = () => {
         </ImgWrp>
       </IntroWrapper>
       {/* section2 */}
-      <VideoSection>
+      {/* <VideoSection>
         <SectionTitle>보드게임에서 모바일 게임까지</SectionTitle>
         <SectionDesc>
           여러분이 즐거울 수 있다면, 장르를 따지지 않고 게임을 개발합니다.
@@ -221,7 +221,7 @@ const AboutSection = () => {
             </QuotationSign>
           </QuotationWrapper>
         </VideoWrapper>
-      </VideoSection>
+      </VideoSection> */}
     </Container>
   )
 }
