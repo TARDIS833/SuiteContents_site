@@ -17,10 +17,13 @@ const NavList = [
     href: '/Games',
     title: 'Games',
   },
-  // {
-  //   href: '/Shop',
-  //   title: 'Shop',
-  // },
+  {
+    href: 'https://smartstore.naver.com/suitegames',
+    title: 'Shop',  
+    target: '_blank',
+    rel: 'noopener'
+    //새 창에서 링크 열도록 하고 싶은데, 기존 창에서 열림...
+  },
   {
     href: '/Contact',
     title: 'Contact',

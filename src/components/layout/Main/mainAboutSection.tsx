@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Container = styled.div`
   width: 1200px;
@@ -126,6 +127,12 @@ const VideoWrapper = styled.div`
     display: block;
   }
 `
+const Video = styled.video`
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+`
+/*
 const Video = styled.div`
   width: 652px;
   height: 472px;
@@ -140,6 +147,11 @@ const Video = styled.div`
     margin: 0 auto;
     margin-bottom: 24px;
   }
+`
+*/
+const VideoDesc = styled.div`
+  margin-top: 16px;
+  text-align: center;
 `
 
 const QuotationWrapper = styled.div`
@@ -201,27 +213,25 @@ const AboutSection = () => {
         </ImgWrp>
       </IntroWrapper>
       {/* section2 */}
-      {/* <VideoSection>
-        <SectionTitle>보드게임에서 모바일 게임까지</SectionTitle>
-        <SectionDesc>
-          여러분이 즐거울 수 있다면, 장르를 따지지 않고 게임을 개발합니다.
-        </SectionDesc>
+      <VideoSection>
+        <SectionTitle>디그타운 플레이 방법</SectionTitle>
+        <SectionDesc>동영상으로 디그타운 플레이 방법을 확인해 보세요.</SectionDesc>
         <VideoWrapper>
-          <Video>
-            <Image src={'/assets/videoDefault.png'} width={92} height={92} />
+          <Video controls>
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
           </Video>
-          <QuotationWrapper>
-            <Quotation>
-              “재미있는 아이디어가 떠오르면 많은 분들에게 보여드리고 싶습니다.
-              만들어 나가는 과정 자체도 즐겁지만 만족스러운 피드백을 보는 것이
-              가장 기분이 좋습니다.”
-            </Quotation>
-            <QuotationSign>
-              스위트게임즈 대표이사 -<span> 손영익</span>
-            </QuotationSign>
-          </QuotationWrapper>
         </VideoWrapper>
-      </VideoSection> */}
+        <VideoDesc>
+          <Link href="https://smartstore.naver.com/suitegames">
+            <a>
+              디그타운 구매하러 가기
+            </a>
+          </Link>
+        </VideoDesc>
+      </VideoSection>
     </Container>
   )
 }
